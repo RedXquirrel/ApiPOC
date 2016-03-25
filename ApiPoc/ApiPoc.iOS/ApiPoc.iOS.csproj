@@ -98,11 +98,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ApiPoc\ApiPoc.csproj">
-      <Name>ApiPoc</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="Resources\Default-Portrait.png" />
     <BundleResource Include="Resources\Default-Portrait%402x.png" />
@@ -137,6 +132,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApiPoc\ApiPoc.csproj">
+      <Project>{5f57c7ca-694e-4a92-94c2-eb6ba556c7c7}</Project>
+      <Name>ApiPoc</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\..\ApiPoc.Shared\ApiPoc.Shared.projitems" Label="Shared" Condition="Exists('..\..\ApiPoc.Shared\ApiPoc.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

@@ -27,8 +27,8 @@ namespace ApiTests
         {
             List<Person> persons = new List<Person>
             {
-                new Person { FirstName = "Anthony" , LastName = "Harrison", Email = "anthony.harrison@xamtastic.com", WebAddress = "www.xamtastic.com", Id = Guid.NewGuid().ToString() },
-                new Person { FirstName = "Joe" , LastName = "Bloggs", Email = "joe@bloggs.net", WebAddress = "www.bloggs.net", Id = Guid.NewGuid().ToString() },
+                new Person { FirstName = "Anthony" , LastName = "Harrison", Email = "anthony.harrison@xamtastic.com", WebAddress = "www.xamtastic.com", Id = "ad6dda4c-d25c-49f0-858f-3723c068d2a5" },
+                new Person { FirstName = "Joe" , LastName = "Bloggs", Email = "joe@bloggs.net", WebAddress = "www.bloggs.net", Id = "ca0d9950-1a2d-47fd-a3da-3ee53e340b23" },
             };
 
             return JsonConvert.SerializeObject(persons);
